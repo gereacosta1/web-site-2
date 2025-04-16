@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MotoStyle - Catálogo de Motos y Scooters</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">MotoStyle</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#catalogo">Catálogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h1>Descubre tu próxima aventura sobre dos ruedas</h1>
+        <p>Explora nuestra selección premium de motos y scooters</p>
+        <a href="#catalogo" class="btn btn-primary btn-lg">Ver Catálogo</a>
+      </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalogo" class="section">
+      <div class="container">
+        <h2 class="text-center mb-5">Nuestro Catálogo</h2>
+        <div class="filters">
+          <button class="btn-filter active" data-filter="todos">Todos</button>
+          <button class="btn-filter" data-filter="motos">Motos</button>
+          <button class="btn-filter" data-filter="scooters">Scooters</button>
+        </div>
+        <div class="products-grid" id="products-container">
+          <!-- Products will be loaded dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="section">
+      <div class="container">
+        <div class="about-section">
+          <h2 class="text-center mb-5">Sobre Nosotros</h2>
+          
+          <div class="row mb-5">
+            <div class="col-md-6">
+              <h3>Nuestra Historia</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <img src="https://images.unsplash.com/photo-1558981285-6f0c94958bb6?q=80&w=2070" alt="2010" class="timeline-image">
+                  <div class="timeline-content">
+                    <h4>2010</h4>
+                    <p>Fundación de MotoStyle con una pequeña tienda en el centro de la ciudad.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <img src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?q=80&w=2070" alt="2015" class="timeline-image">
+                  <div class="timeline-content">
+                    <h4>2015</h4>
+                    <p>Expansión del negocio y apertura de nuestra segunda sucursal.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2070" alt="2020" class="timeline-image">
+                  <div class="timeline-content">
+                    <h4>2020</h4>
+                    <p>Incorporación de líneas premium y servicios especializados.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=2070" alt="2024" class="timeline-image">
+                  <div class="timeline-content">
+                    <h4>2024</h4>
+                    <p>Líderes en el mercado con la mayor variedad de motos y scooters.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img src="https://images.unsplash.com/photo-1622185135505-2d795003994a?q=80&w=2070" alt="Nuestro local" class="img-fluid rounded">
+            </div>
+          </div>
+
+          <div class="testimonials">
+            <h3 class="text-center mb-4">Lo que dicen nuestros clientes</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="testimonial-card">
+                  <i class="fas fa-quote-left fa-2x mb-3"></i>
+                  <p>"Excelente servicio y asesoramiento. Me ayudaron a encontrar la moto perfecta para mis necesidades."</p>
+                  <strong>- Carlos R.</strong>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="testimonial-card">
+                  <i class="fas fa-quote-left fa-2x mb-3"></i>
+                  <p>"La mejor experiencia de compra. El personal es muy profesional y conocedor."</p>
+                  <strong>- Ana M.</strong>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="testimonial-card">
+                  <i class="fas fa-quote-left fa-2x mb-3"></i>
+                  <p>"Increíble variedad de modelos y excelentes precios. Totalmente recomendado."</p>
+                  <strong>- Luis P.</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+      <div class="container">
+        <h2 class="text-center mb-5">Contacto</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <form id="contact-form">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Nombre" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email" required>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-info">
+              <h3>Información de Contacto</h3>
+              <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</p>
+              <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+              <p><i class="fas fa-envelope"></i> info@motostyle.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Product Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
