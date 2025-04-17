@@ -11,7 +11,7 @@ const products = [
     price: '$12,999',
     year: '2024',
     model: 'SB-1000',
-    image: 'https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=2070',
+    image: '/img/moto.jpeg',
     description: 'Potente moto deportiva con motor de 1000cc, perfecta para los amantes de la velocidad y la adrenalina. Incluye sistemas avanzados de control de tracción y ABS.'
   },
   {
@@ -21,7 +21,7 @@ const products = [
     price: '$3,499',
     year: '2024',
     model: 'US-125',
-    image: 'https://images.unsplash.com/photo-1494548162494-384bba4ab999?q=80&w=2070',
+    image: '/img/scooter2.jpeg',
     description: 'Scooter urbano ideal para la ciudad, con motor de 125cc y gran capacidad de almacenamiento. Perfecta combinación de estilo y funcionalidad.'
   },
   {
@@ -31,7 +31,7 @@ const products = [
     price: '$10,499',
     year: '2024',
     model: 'AB-800',
-    image: 'https://images.unsplash.com/photo-1558981285-6f0c94958bb6?q=80&w=2070',
+    image: '/img/scooter2.jpeg',
     description: 'Moto versátil para aventuras todo terreno. Motor de 800cc con excelente rendimiento tanto en carretera como fuera de ella.'
   },
   {
@@ -41,7 +41,7 @@ const products = [
     price: '$2,999',
     year: '2024',
     model: 'ES-PRO',
-    image: 'https://images.unsplash.com/photo-1523476324532-18841ae4ab8e?q=80&w=2070',
+    image: '/img/scooter2.jpeg',
     description: 'Scooter eléctrico con autonomía de 60km, perfecto para desplazamientos urbanos. Incluye conectividad Bluetooth y app móvil.'
   },
   {
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <p class="product-price">${product.price}</p>
         <p><strong>Año:</strong> ${product.year}</p>
         <p><strong>Modelo:</strong> ${product.model}</p>
-        <button class="btn btn-primary w-100" data-id="${product.id}">Más información</button>
+        <button class="btn btn-dark w-100" data-id="${product.id}">Más información</button>
       </div>
     `;
 

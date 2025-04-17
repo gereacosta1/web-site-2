@@ -5,11 +5,11 @@
 /* Custom Variables */
 :root {
   --primary-color: #2c3e50;
-  --secondary-color: #3498db;
+  --secondary-color: #2c3e50;
   --accent-color: #e67e22;
   --text-color: #2c3e50;
   --background-color: #f8f9fa;
-  --section-padding: 80px 0;
+  --section-padding: 100px 0;
   --card-shadow: 0 15px 35px rgba(0,0,0,0.15);
   --transition-speed: 0.3s;
 }
@@ -27,6 +27,21 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
+.container h2{
+    background-color: #2c3e50; /* Elegí el color que quieras */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno para agrandar el "bloque" */
+    display: inline-block; /* Hace que el fondo se ajuste al contenido */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+
+.container {
+  text-align: center;
+}
+
 .section {
   padding: var(--section-padding);
 }
@@ -35,10 +50,12 @@ h1, h2, h3 {
 .navbar {
   background-color: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(10px);
-  border-radius: 0 0 20px 20px;
-  padding: 1rem 2rem;
+  border-radius: 20px 20px 20px 20px;
+  padding: 2rem 3rem;
   transition: all var(--transition-speed) ease;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin-top: 15px;
+  margin: 9px;
 }
 
 .navbar-brand {
@@ -72,7 +89,7 @@ h1, h2, h3 {
 }
 
 /* Hero Section */
-.hero {
+/* .hero {
   height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
               url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=2070') center/cover;
@@ -82,6 +99,24 @@ h1, h2, h3 {
   color: white;
   margin-top: 0;
   padding-top: 0;
+} */
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=2070') center/cover fixed;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  padding-top: 0;
+  position: relative;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .hero h1 {
@@ -193,19 +228,20 @@ h1, h2, h3 {
 
 .timeline {
   position: relative;
-  padding: 2rem 0;
+  padding: 3rem 1rem;
 }
 
 .timeline-item {
   padding: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border-radius: 15px;
   background: var(--background-color);
   position: relative;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   transition: all var(--transition-speed) ease;
+  font-size: 1.2rem;
 }
 
 .timeline-item:hover {
@@ -214,14 +250,20 @@ h1, h2, h3 {
 }
 
 .timeline-image {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .timeline-content {
   flex: 1;
+}
+
+.timeline-content h4{
+  color: #2c3e50;
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 
 /* Testimonials Section */
@@ -302,8 +344,8 @@ h1, h2, h3 {
   right: 2rem;
   background: #25d366;
   color: white;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
