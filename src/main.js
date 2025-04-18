@@ -11,7 +11,7 @@ const products = [
     price: '$12,999',
     year: '2024',
     model: 'SB-1000',
-    image: '/img/moto.jpeg',
+    image: '/img/moto5.jpeg',
     description: 'Potente moto deportiva con motor de 1000cc, perfecta para los amantes de la velocidad y la adrenalina. Incluye sistemas avanzados de control de tracción y ABS.'
   },
   {
@@ -21,7 +21,7 @@ const products = [
     price: '$3,499',
     year: '2024',
     model: 'US-125',
-    image: '/img/scooter2.jpeg',
+    image: '/img/moto2.jpeg',
     description: 'Scooter urbano ideal para la ciudad, con motor de 125cc y gran capacidad de almacenamiento. Perfecta combinación de estilo y funcionalidad.'
   },
   {
@@ -31,7 +31,7 @@ const products = [
     price: '$10,499',
     year: '2024',
     model: 'AB-800',
-    image: '/img/scooter2.jpeg',
+    image: '/img/moto3.jpeg',
     description: 'Moto versátil para aventuras todo terreno. Motor de 800cc con excelente rendimiento tanto en carretera como fuera de ella.'
   },
   {
@@ -41,7 +41,7 @@ const products = [
     price: '$2,999',
     year: '2024',
     model: 'ES-PRO',
-    image: '/img/scooter2.jpeg',
+    image: '/img/moto4.jpeg',
     description: 'Scooter eléctrico con autonomía de 60km, perfecto para desplazamientos urbanos. Incluye conectividad Bluetooth y app móvil.'
   },
   {
@@ -51,7 +51,7 @@ const products = [
     price: '$15,999',
     year: '2024',
     model: 'CR-1500',
-    image: 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=2070',
+    image: '/img/moto5.jpeg',
     description: 'Motocicleta estilo crucero con motor de 1500cc. Diseñada para viajes largos con máximo confort.'
   },
   {
@@ -61,7 +61,7 @@ const products = [
     price: '$3,799',
     year: '2024',
     model: 'CS-150',
-    image: 'https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?q=80&w=2070',
+    image: '/img/scooter.jpeg',
     description: 'Scooter urbano de 150cc con amplio espacio de almacenamiento y consumo eficiente.'
   },
   {
@@ -71,7 +71,7 @@ const products = [
     price: '$13,999',
     year: '2024',
     model: 'ST-1200',
-    image: 'https://images.unsplash.com/photo-1558981359-219d6364c9c8?q=80&w=2070',
+    image: '/img/scooter2.jpeg',
     description: 'Combinación perfecta entre deportividad y confort para largas distancias. Motor de 1200cc.'
   },
   {
@@ -81,7 +81,7 @@ const products = [
     price: '$5,999',
     year: '2024',
     model: 'MS-300',
-    image: 'https://images.unsplash.com/photo-1494516192674-b82b5f1e61dc?q=80&w=2070',
+    image: '/img/scooter3.jpeg',
     description: 'Scooter de alta gama con motor de 300cc, ideal para ciudad y carretera. Máximo confort y prestaciones.'
   },
   {
@@ -91,7 +91,7 @@ const products = [
     price: '$8,999',
     year: '2024',
     model: 'NB-600',
-    image: 'https://images.unsplash.com/photo-1558981001-1995369a39cd?q=80&w=2070',
+    image: '/img/scooter4.jpeg',
     description: 'Motocicleta naked con motor de 600cc. Perfecta para ciudad y escapadas de fin de semana.'
   },
   {
@@ -101,7 +101,27 @@ const products = [
     price: '$3,299',
     year: '2024',
     model: 'RS-125',
-    image: 'https://images.unsplash.com/photo-1494515426402-f1980ace7a9c?q=80&w=2070',
+    image: '/img/scooter5.jpeg',
+    description: 'Scooter con diseño retro y tecnología moderna. Motor de 125cc ideal para ciudad.'
+  },
+  {
+    id: 11,
+    name: 'Naked Bike 600',
+    type: 'motos',
+    price: '$8,999',
+    year: '2024',
+    model: 'NB-600',
+    image: '/img/scooter4.jpeg',
+    description: 'Motocicleta naked con motor de 600cc. Perfecta para ciudad y escapadas de fin de semana.'
+  },
+  {
+    id: 12,
+    name: 'Retro Scooter 125',
+    type: 'scooters',
+    price: '$3,299',
+    year: '2024',
+    model: 'RS-125',
+    image: '/img/scooter5.jpeg',
     description: 'Scooter con diseño retro y tecnología moderna. Motor de 125cc ideal para ciudad.'
   }
 ];
