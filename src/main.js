@@ -11,7 +11,7 @@ const products = [
     price: '$12,999',
     year: '2024',
     model: 'SB-1000',
-    image: '/public/img/moto2.jpeg',
+    image: '/img/moto2.jpeg',
     description: 'Potente moto deportiva con motor de 1000cc, perfecta para los amantes de la velocidad y la adrenalina. Incluye sistemas avanzados de control de tracción y ABS.'
   },
   {
@@ -21,7 +21,7 @@ const products = [
     price: '$3,499',
     year: '2024',
     model: 'US-125',
-    image: '/public/img/moto2.jpeg',
+    image: '/img/moto2.jpeg',
     description: 'Scooter urbano ideal para la ciudad, con motor de 125cc y gran capacidad de almacenamiento. Perfecta combinación de estilo y funcionalidad.'
   },
   {
@@ -31,7 +31,7 @@ const products = [
     price: '$10,499',
     year: '2024',
     model: 'AB-800',
-    image: '/public/img/moto2.jpeg',
+    image: '/img/moto2.jpeg',
     description: 'Moto versátil para aventuras todo terreno. Motor de 800cc con excelente rendimiento tanto en carretera como fuera de ella.'
   },
   {
