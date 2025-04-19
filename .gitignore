@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# ... other rules ...
+!public/images/
+!src/assets/images/
+
